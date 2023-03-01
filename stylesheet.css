@@ -1,71 +1,75 @@
-/* Center the header section */
 * {
     box-sizing: border-box;
 }
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f8f8;
-    flex-wrap: wrap;
-  }
-  
   /* Left section */
   .hero-section-left {
     display: flex;
-  flex-direction: column; 
+  flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-basis: 50%;
-   
+    align-items: center;
+    border: 2px solid red;
   }
-  
-  
-  
+  .hero-text {
+    margin-left: 20px;
+  }
   /* Profile image */
   .profile-image {
     border-radius: 50%;
-    width: 100px;
-    margin-right: 20px;
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 90% 10%;
+    margin-top: 10%; /*   Eventuellt ändra enhet om det ser konstigt ut i media queries */
   }
-  
-  /* Hero title */
- 
-  
   /* Text section */
   .text-section {
-    margin: 20px;
-    
+    margin: 10px;
+    padding-left: 40px;
   }
-
-  
   /* Social media links */
   .social-media-section {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start; /* Add this line */
+    margin-bottom: 20px;
+    border: 2px solid black;
   }
-  
-  .social-media-section a {
-    margin-right: 10px;
+ .social-media-section img {
+  display: flex;
+  border: 2px solid green;
+  margin: 20px;
   }
-  
-  .social-media-section img {
-    width: 30px;
-    height: 30px;
-  }
-  
   /* Right section */
   .hero-section-right {
-    flex-basis: 50%;
-  
-
+    border: 2px solid blue;
+    display: none;
   }
-  
   /* Hero image */
   .hero-image {
     max-width: 100%;
     height: auto;
   }
-  
-  
+  /* STYLING FOR TABLET (668 > 1024px) */
+@media (min-width: 668px) and (max-width: 1024px) {
+  /* HERO SECTION TABLET*/
+.hero-section-right {
+  display: flex;
+max-height: 500px;
+  border: 2px solid blue;
+}
+/* Left section */
+.hero-section-left {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 2px solid red;
+}
+.text-section {
+  margin: 30px;
+  padding: 20px 50px;
+  }
+}
+.profile-image {
+  margin-right: 10%;
+}
