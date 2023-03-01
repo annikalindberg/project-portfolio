@@ -1,0 +1,71 @@
+/* Center the header section */
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+  }
+  
+  /* Left section */
+  .hero-section-left {
+    display: flex;
+  flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+   
+  }
+  
+  
+  
+  /* Profile image */
+  .profile-image {
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  /* Hero title */
+ 
+  
+  /* Text section */
+  .text-section {
+    margin: 20px;
+    
+  }
+
+  
+  /* Social media links */
+  .social-media-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .social-media-section a {
+    margin-right: 10px;
+  }
+  
+  .social-media-section img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Right section */
+  .hero-section-right {
+    flex-basis: 50%;
+  
+
+  }
+  
+  /* Hero image */
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
