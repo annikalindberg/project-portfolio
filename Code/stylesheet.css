@@ -7,16 +7,21 @@
     padding: 0;
 }
 
-p {
-  font-family: 'EB Garamond', serif;}
+body {
+  font-family: 'Satoshi', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
 
   /* Right/top section */
   .hero-section-right {
     border: 2px solid blue;
-    display: none;
     margin: auto;
   }
 
+.hero-image {
+  display: none;
+}
   .hero-bigtext-wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -79,47 +84,118 @@ h3 {
     margin: 3em auto 2em auto;
   }
 
-/*   Kommer göra att alla bilder blir responsive
- */  .image {
+/*   Kommer göra att alla bilder blir responsive */
+   .image {
     width: 100%;
     max-width: 327px;
     height: auto;
-}
+ }
 
   #headshot {
     border-radius: 50%;
     max-width: 150px;
     max-height: 150px;
-    object-position: 60% 40%;
-    margin-top: 10%; /*   Eventuellt ändra enhet om det ser konstigt ut i media queries */
+    object-position: 50% 50%;
+    
   }
 
 
-  /* Social media links */
-  .social-media-section {
+   /* Social media links */
+
+   .icons-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    margin-bottom: 20px;
-    border: 2px solid black;
-  }
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
 
- .social-media-section img {
+.a-container {
+    display: flex;
+    align-items: center;
+    color: #EB5577;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.a-container:hover {
+    transform: scale(1.1);
+    color: black;
+    border: none;
+}
+
+.svg {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+  
+
+/*** MAIN CONTENT (mobile) ***/
+
+.width-container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+
+        /* TECH SECTION MOBILE */
+
+#tech {
+margin: 1em 10px 1em 10px;
+      }
+      #tech1 {
+        background: #EB5577;
+        color: white;
+    }
+    
+    #tech2 {
+        background: #0B24F5;
+        color: white;
+    }
+    
+    #tech3 {
+        background: #2483E0;
+        color: white;
+    }
+    .tech-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #EDFFFF;
+      height: 530px;
+      padding: 20px 20px;
+    }
+/* FOOTER MOBILE */
+
+.headshot-wrapper-footer {
   display: flex;
-  border: 2px solid green;
-  margin: 20px;
-  }
+  justify-content: left;
+}
 
   /* STYLING FOR TABLET (668 > 1024px) */
 @media (min-width: 668px) and (max-width: 1024px) {
- 
+
+  html {
+    max-width: 1023px;
+}
    /* HERO SECTION TABLET*/
+   .hero-image {
+    display: flex;
+    height: 412px;
+    justify-content: center;
+  }
 .hero-section-right {
-  display: flex;
+display: flex;
 max-height: 500px;
-  border: 2px solid blue;
+border: 2px solid blue;
 }
 /* Left/bottom section */
+
 .hero-section-left {
 display: flex;
 flex-direction: column;
@@ -127,6 +203,7 @@ justify-content: center;
 align-items: center;
 border: 2px solid red;
 }
+
 .text-section {
   margin-left: 30px;
 }
@@ -135,7 +212,12 @@ border: 2px solid red;
   margin-left: 50px;
 }
 
-.social-media-section {
-background-color: aqua;
+
+/* TECH SECTION - TABLET */
+
+#tech-list {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 }
