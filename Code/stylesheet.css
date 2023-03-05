@@ -13,15 +13,9 @@ body {
   overflow-x: hidden !important;
 }
 
-  /* Right/top section */
   .hero-section-right {
-    border: 2px solid blue;
-    margin: auto;
+    display: none;
   }
-
-.hero-image {
-  display: none;
-}
   .hero-bigtext-wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -143,33 +137,6 @@ h3 {
 }
 
 
-        /* TECH SECTION MOBILE */
-
-#tech {
-margin: 1em 10px 1em 10px;
-      }
-      #tech1 {
-        background: #EB5577;
-        color: white;
-    }
-    
-    #tech2 {
-        background: #0B24F5;
-        color: white;
-    }
-    
-    #tech3 {
-        background: #2483E0;
-        color: white;
-    }
-    .tech-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #EDFFFF;
-      height: 530px;
-      padding: 20px 20px;
-    }
 /* FOOTER MOBILE */
 
 .headshot-wrapper-footer {
@@ -184,16 +151,25 @@ margin: 1em 10px 1em 10px;
     max-width: 1023px;
 }
    /* HERO SECTION TABLET*/
-   .hero-image {
+  /*  .hero-section-right {
     display: flex;
+    background-color: #cbc3e3;
     height: 412px;
     justify-content: center;
-  }
-.hero-section-right {
-display: flex;
-max-height: 500px;
-border: 2px solid blue;
-}
+  } */
+  /* Right/top section */
+  .hero-section-right {
+    display: flex;
+    border: 2px solid blue;
+      height: 412px; /* set the height of the header container */
+      background-image: url(/Assets/images/profile-hands.jpeg), url(/Assets/images/profile-skates.JPG); /* set the path to the background image */
+      background-repeat: no-repeat, no-repeat; /* make sure the image is not repeated */
+      background-size: cover; /* resize the image to cover the header container */
+      background-position: 0% 0%, 100% 100%
+    }
+   
+    
+    
 /* Left/bottom section */
 
 .hero-section-left {
@@ -214,10 +190,10 @@ border: 2px solid red;
 
 
 /* TECH SECTION - TABLET */
-
+/* 
 #tech-list {
   width: 100%;
   max-width: 500px;
   height: auto;
-}
+} */
 }
