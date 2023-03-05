@@ -7,13 +7,28 @@
     padding: 0;
 }
 
+/*   Kommer göra att alla bilder blir responsive */
+.image {
+  width: 100%;
+  max-width: 327px;
+  height: auto;
+}
+
 body {
   font-family: 'Satoshi', sans-serif;
   max-width: 100%;
   overflow-x: hidden !important;
 }
 
+.hero-section-left, .tech-section, .featured-projects, .my-words, .contact {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 24px 0 24px;
+  padding-top: 20px;
+} 
+
   .hero-section-right {
+    margin: 20px 24px 0 24px;
     display: none;
   }
   .hero-bigtext-wrapper {
@@ -54,12 +69,29 @@ h3 {
   line-height: 32px;
   
 }
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  color: #0B24F5;
+  margin: auto;
+  padding-bottom: 64px;
+ text-align: center;
+}
   
 .hero-smalltext-wrapper {  
   padding: 5% 10%;
   font-size: 22px;
-
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 18px;
 }
+
 
   /* Left/bottom section */
   .hero-section-left {
@@ -70,20 +102,14 @@ h3 {
     border: 2px solid red;
   }
  
-
-  /* Profile image */
+ /*  Container for background image  */
     .hero-img-wrapper {
     display: flex;
     justify-content: center;
     margin: 3em auto 2em auto;
   }
 
-/*   Kommer göra att alla bilder blir responsive */
-   .image {
-    width: 100%;
-    max-width: 327px;
-    height: auto;
- }
+
 
   #headshot {
     border-radius: 50%;
@@ -92,7 +118,11 @@ h3 {
     object-position: 50% 50%;
     
   }
-
+  .tech-section {
+  background-color: #EDFFFF;
+  padding: 50px 24px 50px 24px;
+  margin: 10% 0 0 0;
+}
 
    /* Social media links */
 
@@ -123,20 +153,115 @@ h3 {
     box-sizing: content-box;
 }
 
+
   
 
 /*** MAIN CONTENT (mobile) ***/
 
-.width-container {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 50px 20px;
+.HTML {
+  color: #ffffff; 
+  background-color: #0B24F5; 
+  padding: 1px;
+}
+
+.JS {
+  color: #ffffff; 
+  background-color: #EB5577; 
+  padding: 1px;
+}
+
+.TBA {
+  color: #ffffff; 
+  background-color: #2483E0;
+  padding: 1px;
+}
+
+.tech-section {
+  background-color: #EDFFFF;
+  padding: 50px 24px 50px 24px;
+  margin: 10% 0 0 0;
+}
+
+/*** FEATURED PROJECTS MOBILE ***/
+
+.project {
+  justify-items: flex-start;
+  margin-bottom: 80px;
 }
 
 
+.project-image {
+width: 100%;
+max-width: 327px;
+height: auto;
+}
+.project span {
+  font-family: 'Satoshi', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 2px 6px 2px 6px;
+  margin-right: 4px;
+  margin-top: 18px;
+}
+
+.featured-buttons {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.featured-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn1 {
+  width: 200px;
+  background: #F5F5F5;
+  border-radius: 40px;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  font-family: 'Satoshi', sans-serif;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.btn2 {
+  width: 164px;
+  background: #F5F5F5;
+  border-radius: 40px;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  font-family: 'Satoshi', sans-serif;
+  color: #333333;
+  margin-bottom: 3em;
+  border: none;
+}
+
+.btn1:hover{
+  background: #EB5577;
+  color: white;
+  border: none;
+}
+
+.btn2:hover {
+  background: #0B24F5;
+  color: white;
+  border: none;
+}
+
+
+.btn-content {
+    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /* FOOTER MOBILE */
 
 .headshot-wrapper-footer {
@@ -162,10 +287,10 @@ h3 {
     display: flex;
     border: 2px solid blue;
       height: 412px; /* set the height of the header container */
-      background-image: url(/Assets/images/profile-hands.jpeg), url(/Assets/images/profile-skates.JPG); /* set the path to the background image */
-      background-repeat: no-repeat, no-repeat; /* make sure the image is not repeated */
+      background-image: url()
+      background-repeat: no-repeat  /* make sure the image is not repeated */
       background-size: cover; /* resize the image to cover the header container */
-      background-position: 0% 0%, 100% 100%
+    
     }
    
     
@@ -183,17 +308,11 @@ border: 2px solid red;
 .text-section {
   margin-left: 30px;
 }
-.profile-image {
-  align-self: flex-start;
-  margin-left: 50px;
-}
+ 
+ 
 
 
 /* TECH SECTION - TABLET */
-/* 
-#tech-list {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-} */
+
+
 }
