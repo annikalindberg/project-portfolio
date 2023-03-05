@@ -23,14 +23,18 @@ body {
 .hero-section-left, .tech-section, .featured-projects, .my-words, .contact {
   display: flex;
   flex-direction: column;
-  margin: 20px 24px 0 24px;
+  /* margin: 20px 24px 0 24px; */
   padding-top: 20px;
 } 
+.hero-section-right {
+ /*  margin: 20px 24px 0 24px; */
+  background-image: url(/Assets/images/rainbow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.9); /* set the background color with 50% opacity */ */
+  display: none;
+}
 
-  .hero-section-right {
-    margin: 20px 24px 0 24px;
-    display: none;
-  }
   .hero-bigtext-wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -99,7 +103,7 @@ h4 {
   flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
  
  /*  Container for background image  */
@@ -120,8 +124,8 @@ h4 {
   }
   .tech-section {
   background-color: #EDFFFF;
-  padding: 50px 24px 50px 24px;
-  margin: 10% 0 0 0;
+  /* padding: 50px 24px 50px 24px; */
+ /*  margin: 10% 0 0 0; */
 }
 
    /* Social media links */
@@ -285,13 +289,8 @@ height: auto;
   /* Right/top section */
   .hero-section-right {
     display: flex;
-    border: 2px solid blue;
-      height: 412px; /* set the height of the header container */
-      background-image: url()
-      background-repeat: no-repeat  /* make sure the image is not repeated */
-      background-size: cover; /* resize the image to cover the header container */
-    
-    }
+    height: 412px; /* set the height of the header container */
+     
    
     
     
