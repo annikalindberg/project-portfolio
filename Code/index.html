@@ -1,199 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Code/reset.css">
-    <link rel="stylesheet" href="/Code/stylesheet.css">
-<!-- Most essential OG tags -->
-    <meta property ="og:title" content="Annikas Portfolio"/>
-    <meta property ="og:description" content="The portfolio page of Annika Lindberg 
-    Frontend developer"/>
-    <meta property ="og:image" content="https://placehold.co/400"/>
-<!-- OG tags for a webpage that has a video -->
-<meta property ="og:type" content="video"/>
-<meta property ="og:video" content="https/put-your-video-link-here.com"/>
-<meta property ="og:video:type" content="video"/>
-<!----->
-<meta property ="og:video:width" content="640"/>
-<meta property ="og:video:height" content="360"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <!-- font and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="https://api.fontshare.com/v2/css?f=satoshi@1,900,700,500,300,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dae95110f4.js" crossorigin="anonymous"></script>
+    <!-- OG tags for social media-->
+    <meta property="og:title" content="Annikas Portfolio" />
+    <meta property="og:description" content="The portfolio page of Annika Lindberg Frontend developer" />
+    <!-- !! Change the picture below, only a placeholder !! -->
+    <meta property="og:image" content="./images.png" />
+    <!--Title of webpage-->
     <title>Annikas Portfolio</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
-<!-- HEADER -->
-    <section class="hero-section-right">
-   
-    </section>
-  <!-- The section of the hero that keeps the info and profile picture -->
-    <section class="hero-section-left">
-    <div class="hero-img-wrapper" >
-        <img id="headshot" src="/Assets/images/profil-square.JPG" alt="Annikas profile picture">
-        <div class="hero-bigtext-wrapper" > 
-            <h1>Annika Lindberg</h1>
-            <h2>Frontend developer</h2>
-            <h3>+ coordinator</h3>
+    <header>
+        <!-- HERO PICTURE RIGHT SIDE/TOP-->
+        <div class="picture" aria-hidden="true">
+            <img class="cover" src="/Assets/images/rainbow.jpg" alt="portfolio cover">
         </div>
+
+        <div class="header-container">
+            <div class="myProfilePic">
+                <img class="profile-pic" src="/Assets/images/profil-square.JPG" alt="profile image of Annika">
+            </div>
+
+            <div lang="en-US" class="nameAndTitle">
+                <h1 class="name">Annika Lindberg</h1>
+                <h2 class="title">Frontend developer</h2>
+            </div>
+
+            <div lang="en-US" class="introduction">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus blanditiis nemo excepturi
+                    itaque ullam culpa expedita! Eaque eveniet, vero ipsam adipisci unde in perspiciatis alias quis
+                    similique id sed.</p>
+            </div>
+            <!-- Here goes icons with links -->
+            <div class="contact-me">
+                <a hreflang="en-US" class="icon" title="link to Annika's Linked In page"
+                    href="https://www.linkedin.com/in/annika-lindberg-a3398b263/" target="_blank">
+                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                </a>
+                <a hreflang="en-US" class="icon" title="link to Annika's Github page"
+                    href="https://github.com/annikalindberg" target="_blank">
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a hreflang="en-US" class="icon" title="link to Annika's mail"
+                    href="mailto:annika.edit.lindberg@gmail.com" target="_blank">
+                    <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Here goes "Lets scroll" -->
+    <div class="scroll" aria-hidden="true">
+        <p class="arrow"><i class="fa-solid fa-arrow-down"></i></p>
+        <p class="scroll-text">Lets scroll</p>
     </div>
-    
-    <div class="hero-smalltext-wrapper">
-        <p>Sara is an exceptional developer known for her innovative solutions and exceptional
-        coding abilities. She creates user-friendly applications and solves complex issues
-        with ease. Her drive for excellence makes her a valuable asset to any project and a
-        tandout in the technology field.</p>
-    </div>
-    </section>
-        <section class="icons-container">
-        <!--Links-->
-        <!--LinkedIn-->
-            <a class="a-container" href="https://www.linkedin.com/in/annika-lindberg-a3398b263/" target="_blank" aria-label="Link to Annikas Linked In page">
-                <svg class="svg linkedin" width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.1875 25V10.9844H5.82812V25H10.1875ZM7.98438 9.10938C9.39062 9.10938 10.5156 7.9375 10.5156 6.53125C10.5156 5.17188 9.39062 4.04688 7.98438 4.04688C6.625 4.04688 5.5 5.17188 5.5 6.53125C5.5 7.9375 6.625 9.10938 7.98438 9.10938ZM26.4531 25H26.5V17.3125C26.5 13.5625 25.6562 10.6562 21.25 10.6562C19.1406 10.6562 17.7344 11.8281 17.125 12.9062H17.0781V10.9844H12.9062V25H17.2656V18.0625C17.2656 16.2344 17.5938 14.5 19.8438 14.5C22.0938 14.5 22.1406 16.5625 22.1406 18.2031V25H26.4531Z" fill="currentColor"/>
-                </svg>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        <!--Github-->
-            <a class="a-container" href="#" target="_blank" aria-label="Link to Annikas Github page">
-                <svg class="svg github" width="43" height="42" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.8594 22.6562C12.8594 22.5625 12.7656 22.4688 12.625 22.4688C12.4844 22.4688 12.3906 22.5625 12.3906 22.6562C12.3906 22.75 12.4844 22.8438 12.625 22.7969C12.7656 22.7969 12.8594 22.75 12.8594 22.6562ZM11.4062 22.4219C11.4062 22.5156 11.5 22.6562 11.6406 22.6562C11.7344 22.7031 11.875 22.6562 11.9219 22.5625C11.9219 22.4688 11.875 22.375 11.7344 22.3281C11.5938 22.2812 11.4531 22.3281 11.4062 22.4219ZM13.5156 22.375C13.375 22.375 13.2812 22.4688 13.2812 22.6094C13.2812 22.7031 13.4219 22.75 13.5625 22.7031C13.7031 22.6562 13.7969 22.6094 13.75 22.5156C13.75 22.4219 13.6094 22.3281 13.5156 22.375ZM16.5625 4.375C10.0938 4.375 5.125 9.34375 5.125 15.8125C5.125 21.0156 8.35938 25.4688 13.0469 27.0625C13.6562 27.1562 13.8438 26.7812 13.8438 26.5C13.8438 26.1719 13.8438 24.5781 13.8438 23.5938C13.8438 23.5938 10.5625 24.2969 9.85938 22.1875C9.85938 22.1875 9.34375 20.8281 8.59375 20.5C8.59375 20.5 7.51562 19.75 8.64062 19.75C8.64062 19.75 9.8125 19.8438 10.4688 20.9688C11.5 22.7969 13.1875 22.2812 13.8906 21.9531C13.9844 21.2031 14.2656 20.6875 14.6406 20.3594C12.0156 20.0781 9.34375 19.7031 9.34375 15.2031C9.34375 13.8906 9.71875 13.2812 10.4688 12.4375C10.3281 12.1094 9.95312 10.8906 10.6094 9.25C11.5469 8.96875 13.8438 10.5156 13.8438 10.5156C14.7812 10.2344 15.7656 10.1406 16.75 10.1406C17.7812 10.1406 18.7656 10.2344 19.7031 10.5156C19.7031 10.5156 21.9531 8.92188 22.9375 9.25C23.5938 10.8906 23.1719 12.1094 23.0781 12.4375C23.8281 13.2812 24.2969 13.8906 24.2969 15.2031C24.2969 19.7031 21.5312 20.0781 18.9062 20.3594C19.3281 20.7344 19.7031 21.4375 19.7031 22.5625C19.7031 24.1094 19.6562 26.0781 19.6562 26.4531C19.6562 26.7812 19.8906 27.1562 20.5 27.0156C25.1875 25.4688 28.375 21.0156 28.375 15.8125C28.375 9.34375 23.0781 4.375 16.5625 4.375ZM9.67188 20.5469C9.57812 20.5938 9.625 20.7344 9.67188 20.8281C9.76562 20.875 9.85938 20.9219 9.95312 20.875C10 20.8281 10 20.6875 9.90625 20.5938C9.8125 20.5469 9.71875 20.5 9.67188 20.5469ZM9.15625 20.1719C9.10938 20.2656 9.15625 20.3125 9.25 20.3594C9.34375 20.4062 9.4375 20.4062 9.48438 20.3125C9.48438 20.2656 9.4375 20.2188 9.34375 20.1719C9.25 20.125 9.20312 20.125 9.15625 20.1719ZM10.6562 21.8594C10.6094 21.9062 10.6094 22.0469 10.75 22.1406C10.8438 22.2344 10.9844 22.2812 11.0312 22.1875C11.0781 22.1406 11.0781 22 10.9844 21.9062C10.8906 21.8125 10.75 21.7656 10.6562 21.8594ZM10.1406 21.1562C10.0469 21.2031 10.0469 21.3438 10.1406 21.4375C10.2344 21.5312 10.3281 21.5781 10.4219 21.5312C10.4688 21.4844 10.4688 21.3438 10.4219 21.25C10.3281 21.1562 10.2344 21.1094 10.1406 21.1562Z" fill="currentColor"/>
-                </svg>
-            </a>
-        <!--StackOverflow-->
-            <a class="a-container" href="#" target="_blank" aria-label="Link to Annikas Stackowerflow page">
-                <svg class="svg stackoverflow" width="30" height="32" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.5 21H3.5V19H13.5V21ZM19.5 9.335L17.879 0L15.886 0.346L17.506 9.681L19.5 9.335ZM13.536 16.272L3.79 15.297L3.604 17.313L13.359 18.192L13.536 16.272ZM14.074 13.685L4.798 11.077L4.272 13.031L13.578 15.531L14.074 13.685ZM15.278 11.272L6.981 6.408L5.952 8.151L14.25 13.016L15.278 11.272ZM17.144 9.805L11.805 1.976L10.133 3.116L15.472 10.945L17.144 9.805ZM14.5 14V22H2.5V14H0.5V24H16.5V14H14.5Z" fill="currentColor"/>
-                </svg>
-            </a>
+
+    <main>
+        <!-- Here goes info about tech-stack -->
+        <section lang="en-US" class="tech" title="Information about tech-stack"
+            aria-label="Information about tech-stack">
+            <h2>Tech</h2>
+            <p>
+                HTML, CSS, Flexbox, <mark class="pink-bg-text">JavaScript,</mark> ES6, JSX,<mark
+                    class="blue-bg-text">React,</mark> React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,
+                <mark class="light-blue-bg-text">mob-programming,</mark> pair-programming, Github.
+            </p>
         </section>
 
-<!-- MAIN SECTION -->
-    <div class="tech-section">
-        <h4>Tech</h4>
-        <p class="tech-text"><span class="HTML">HTML,</span> CSS, Flexbox, <span class="JS">JavaScript,</span>APIs, pair-programming, Github <span class="TBA">more to come.</span></p>
-    </div>
+        <!-- Here goes a list of projects -->
+        <section lang="en-US" class="featured-projects" title="Annika's featured projects"
+            aria-label="List of Annika's featured projects">
+            <h2 lang="en">Featured Projects</h2>
 
-    <!-- FEATURED PROJECTS -->
-<section class="">
-    <div class="featured-projects" >
-        <h4>Featured projects</h4>
-    <div class="project">
-        <img class="project-image" src="/Assets/images/weather-app-img.png" alt="weather app">
-        <div class="project-text">
-        <h2>Project Weather App</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque doloremque sunt totam, laborum quo accusantium, voluptates sapiente voluptas laboriosam ea nihil 
-            unde labore a! Error, voluptatum! Accusamus, magnam vero! Quibusdam!
-        </p>
-        <span>JavaScript</span>
-        <span>HTML5</span>
-        <span>CSS</span>
-        <div class="featured-buttons">
-            <a href="#" target="_blank">
-              <button type="button" class="btn1">
-                <div class="btn-content">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6452 25.7684C10.6452 25.6363 10.5161 25.5042 10.3226 25.5042C10.129 25.5042 10 25.6363 10 25.7684C10 25.9006 10.129 26.0327 10.3226 25.9667C10.5161 25.9667 10.6452 25.9006 10.6452 25.7684ZM8.64516 25.4381C8.64516 25.5702 8.77419 25.7684 8.96774 25.7684C9.09677 25.8345 9.29032 25.7684 9.35484 25.6363C9.35484 25.5042 9.29032 25.372 9.09677 25.3059C8.90323 25.2399 8.70968 25.3059 8.64516 25.4381ZM11.5484 25.372C11.3548 25.372 11.2258 25.5042 11.2258 25.7024C11.2258 25.8345 11.4194 25.9006 11.6129 25.8345C11.8065 25.7684 11.9355 25.7024 11.871 25.5702C11.871 25.4381 11.6774 25.3059 11.5484 25.372ZM15.7419 0C6.83871 0 0 7.00373 0 16.1218C0 23.4559 4.45161 29.7328 10.9032 31.9793C11.7419 32.1115 12 31.5829 12 31.1864C12 30.7239 12 28.4774 12 27.0899C12 27.0899 7.48387 28.081 6.51613 25.1077C6.51613 25.1077 5.80645 23.1916 4.77419 22.7291C4.77419 22.7291 3.29032 21.6719 4.83871 21.6719C4.83871 21.6719 6.45161 21.8041 7.35484 23.3898C8.77419 25.9667 11.0968 25.2399 12.0645 24.7774C12.1935 23.7202 12.5806 22.9934 13.0968 22.5309C9.48387 22.1344 5.80645 21.6059 5.80645 15.2628C5.80645 13.4128 6.32258 12.5539 7.35484 11.3645C7.16129 10.902 6.64516 9.18414 7.54839 6.87159C8.83871 6.47515 12 8.65556 12 8.65556C13.2903 8.25912 14.6452 8.12697 16 8.12697C17.4194 8.12697 18.7742 8.25912 20.0645 8.65556C20.0645 8.65556 23.1613 6.40908 24.5161 6.87159C25.4194 9.18414 24.8387 10.902 24.7097 11.3645C25.7419 12.5539 26.3871 13.4128 26.3871 15.2628C26.3871 21.6059 22.5806 22.1344 18.9677 22.5309C19.5484 23.0595 20.0645 24.0506 20.0645 25.6363C20.0645 27.8167 20 30.5918 20 31.1204C20 31.5829 20.3226 32.1115 21.1613 31.9132C27.6129 29.7328 32 23.4559 32 16.1218C32 7.00373 24.7097 0 15.7419 0ZM6.25806 22.7952C6.12903 22.8612 6.19355 23.0595 6.25806 23.1916C6.3871 23.2577 6.51613 23.3237 6.64516 23.2577C6.70968 23.1916 6.70968 22.9934 6.58065 22.8612C6.45161 22.7952 6.32258 22.7291 6.25806 22.7952ZM5.54839 22.2666C5.48387 22.3987 5.54839 22.4648 5.67742 22.5309C5.80645 22.5969 5.93548 22.5969 6 22.4648C6 22.3987 5.93548 22.3327 5.80645 22.2666C5.67742 22.2005 5.6129 22.2005 5.54839 22.2666ZM7.6129 24.6452C7.54839 24.7113 7.54839 24.9095 7.74194 25.0416C7.87097 25.1738 8.06452 25.2399 8.12903 25.1077C8.19355 25.0416 8.19355 24.8434 8.06452 24.7113C7.93548 24.5791 7.74194 24.5131 7.6129 24.6452ZM6.90323 23.6541C6.77419 23.7202 6.77419 23.9184 6.90323 24.0506C7.03226 24.1827 7.16129 24.2488 7.29032 24.1827C7.35484 24.1166 7.35484 23.9184 7.29032 23.7863C7.16129 23.6541 7.03226 23.588 6.90323 23.6541Z" fill="currentColor"/>
-                  </svg>                 
-                  View the code
+            <!-- Latest project first-->
+
+            <!--  To-Do-App PROJECT -->
+            <div lang="en-US" class="project">
+                <div class="projectPicture" aria-hidden="true">
+                    <img src="/Assets/images/to-do-app.png" alt="">
                 </div>
-              </button>
-            </a>
-            <a href="#" target="_blank">
-              <button type="button" class="btn2">
-                <div class="btn-content">
-                  <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.495 30.99C23.97 30.99 30.99 23.985 30.99 15.495C30.99 7.02 23.97 0 15.48 0C7.005 0 0 7.02 0 15.495C0 23.985 7.02 30.99 15.495 30.99ZM6.465 6.06C7.965 4.635 9.78 3.54 11.805 2.94C10.74 4.005 9.84 5.50501 9.165 7.335C8.115 7.005 7.21501 6.57 6.465 6.06ZM19.2001 2.955C21.21 3.555 23.025 4.635 24.51 6.06C23.775 6.58499 22.8751 7.005 21.825 7.35C21.15 5.50501 20.25 4.005 19.2001 2.955ZM16.545 3.435C17.79 4.035 18.93 5.655 19.74 7.86C18.75 8.03999 17.685 8.14501 16.545 8.19V3.435ZM11.25 7.86C12.075 5.655 13.2001 4.035 14.445 3.435V8.19C13.305 8.14501 12.24 8.03999 11.25 7.86ZM2.445 14.4451C2.65501 11.895 3.61501 9.54 5.085 7.605C6 8.27999 7.185 8.86501 8.565 9.3C8.17501 10.86 7.92 12.5999 7.845 14.4451H2.445ZM23.145 14.4451C23.07 12.5999 22.815 10.86 22.425 9.3C23.805 8.86501 24.99 8.295 25.89 7.605C27.375 9.54 28.335 11.895 28.545 14.4451H23.145ZM9.99 14.4451C10.065 12.81 10.29 11.25 10.635 9.83999C11.835 10.08 13.1099 10.23 14.445 10.29V14.4451H9.99ZM16.545 14.4451V10.29C17.88 10.23 19.155 10.08 20.355 9.83999C20.7 11.25 20.925 12.81 21 14.4451H16.545ZM2.445 16.545H7.845C7.92 18.42 8.17501 20.175 8.565 21.75C7.2 22.185 6.03 22.755 5.13 23.43C3.63 21.4799 2.65501 19.11 2.445 16.545ZM9.99 16.545H14.445V20.775C13.125 20.835 11.835 20.985 10.65 21.21C10.29 19.785 10.05 18.195 9.99 16.545ZM16.545 20.775V16.545H21C20.94 18.195 20.7 19.785 20.34 21.21C19.155 20.985 17.88 20.835 16.545 20.775ZM22.425 21.75C22.83 20.175 23.07 18.42 23.145 16.545H28.545C28.335 19.11 27.3601 21.4799 25.86 23.43C24.9601 22.755 23.79 22.185 22.425 21.75ZM16.545 22.875C17.6699 22.9199 18.735 23.025 19.71 23.205C18.9 25.365 17.775 26.97 16.545 27.555V22.875ZM11.28 23.205C12.255 23.025 13.32 22.9199 14.445 22.875V27.555C13.215 26.97 12.09 25.365 11.28 23.205ZM6.50999 24.975C7.245 24.465 8.145 24.0451 9.18 23.715C9.85501 25.515 10.74 26.985 11.775 28.035C9.795 27.435 7.995 26.3701 6.50999 24.975ZM21.81 23.715C22.845 24.0451 23.745 24.465 24.4801 24.975C22.995 26.3701 21.1949 27.435 19.215 28.035C20.25 26.985 21.135 25.515 21.81 23.715Z" fill="currentColor"/>
-                  </svg>                    
-                  View it live
-                </div>
-              </button>
-            </a>
-        </div> 
-<!-- </div> -->
-    <div class="project">
-        <img class="project-image" src="/Assets/images/chatbot-img.jpg" alt="chatbot">
-        <div class="project-text">
-            <h2>Chat bot</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque doloremque sunt totam, laborum quo accusantium, voluptates sapiente voluptas laboriosam ea nihil 
-                unde labore a! Error, voluptatum! Accusamus, magnam vero! Quibusdam!</p>
-        </div>
-            <span>JavaScript</span>
-            <span>HTML5</span>
-                <span>CSS</span>
-                <div class="featured-buttons">
-                    <a href="#" target="_blank">
-                    <button type="button" class="btn1">
-                        <div class="btn-content">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.6452 25.7684C10.6452 25.6363 10.5161 25.5042 10.3226 25.5042C10.129 25.5042 10 25.6363 10 25.7684C10 25.9006 10.129 26.0327 10.3226 25.9667C10.5161 25.9667 10.6452 25.9006 10.6452 25.7684ZM8.64516 25.4381C8.64516 25.5702 8.77419 25.7684 8.96774 25.7684C9.09677 25.8345 9.29032 25.7684 9.35484 25.6363C9.35484 25.5042 9.29032 25.372 9.09677 25.3059C8.90323 25.2399 8.70968 25.3059 8.64516 25.4381ZM11.5484 25.372C11.3548 25.372 11.2258 25.5042 11.2258 25.7024C11.2258 25.8345 11.4194 25.9006 11.6129 25.8345C11.8065 25.7684 11.9355 25.7024 11.871 25.5702C11.871 25.4381 11.6774 25.3059 11.5484 25.372ZM15.7419 0C6.83871 0 0 7.00373 0 16.1218C0 23.4559 4.45161 29.7328 10.9032 31.9793C11.7419 32.1115 12 31.5829 12 31.1864C12 30.7239 12 28.4774 12 27.0899C12 27.0899 7.48387 28.081 6.51613 25.1077C6.51613 25.1077 5.80645 23.1916 4.77419 22.7291C4.77419 22.7291 3.29032 21.6719 4.83871 21.6719C4.83871 21.6719 6.45161 21.8041 7.35484 23.3898C8.77419 25.9667 11.0968 25.2399 12.0645 24.7774C12.1935 23.7202 12.5806 22.9934 13.0968 22.5309C9.48387 22.1344 5.80645 21.6059 5.80645 15.2628C5.80645 13.4128 6.32258 12.5539 7.35484 11.3645C7.16129 10.902 6.64516 9.18414 7.54839 6.87159C8.83871 6.47515 12 8.65556 12 8.65556C13.2903 8.25912 14.6452 8.12697 16 8.12697C17.4194 8.12697 18.7742 8.25912 20.0645 8.65556C20.0645 8.65556 23.1613 6.40908 24.5161 6.87159C25.4194 9.18414 24.8387 10.902 24.7097 11.3645C25.7419 12.5539 26.3871 13.4128 26.3871 15.2628C26.3871 21.6059 22.5806 22.1344 18.9677 22.5309C19.5484 23.0595 20.0645 24.0506 20.0645 25.6363C20.0645 27.8167 20 30.5918 20 31.1204C20 31.5829 20.3226 32.1115 21.1613 31.9132C27.6129 29.7328 32 23.4559 32 16.1218C32 7.00373 24.7097 0 15.7419 0ZM6.25806 22.7952C6.12903 22.8612 6.19355 23.0595 6.25806 23.1916C6.3871 23.2577 6.51613 23.3237 6.64516 23.2577C6.70968 23.1916 6.70968 22.9934 6.58065 22.8612C6.45161 22.7952 6.32258 22.7291 6.25806 22.7952ZM5.54839 22.2666C5.48387 22.3987 5.54839 22.4648 5.67742 22.5309C5.80645 22.5969 5.93548 22.5969 6 22.4648C6 22.3987 5.93548 22.3327 5.80645 22.2666C5.67742 22.2005 5.6129 22.2005 5.54839 22.2666ZM7.6129 24.6452C7.54839 24.7113 7.54839 24.9095 7.74194 25.0416C7.87097 25.1738 8.06452 25.2399 8.12903 25.1077C8.19355 25.0416 8.19355 24.8434 8.06452 24.7113C7.93548 24.5791 7.74194 24.5131 7.6129 24.6452ZM6.90323 23.6541C6.77419 23.7202 6.77419 23.9184 6.90323 24.0506C7.03226 24.1827 7.16129 24.2488 7.29032 24.1827C7.35484 24.1166 7.35484 23.9184 7.29032 23.7863C7.16129 23.6541 7.03226 23.588 6.90323 23.6541Z" fill="currentColor"/>
-                        </svg>View the code
-                        </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">To Do App</h3>
+                    <p lang="en">This is a To-Do-App build in React/Redux where i got to practice making my own reducers and slices. I used vanilla css for this project and focuesd on learning how to manage reducers and played around with slicing up the code in different ways.
+                    </p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">HTML</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                        <li lang="en">React</li>
+                        <li lang="en">JSX</li>
+                        <li lang="en">Redux</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github" aria-label="View code on Github"
+                        onclick="window.open('https://github.com/annikalindberg/project-todos');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
                     </button>
-                    </a>
-                    <a href="#" target="_blank">
-                        <button type="button" class="btn2">
-                            <div class="btn-content">
-                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.495 30.99C23.97 30.99 30.99 23.985 30.99 15.495C30.99 7.02 23.97 0 15.48 0C7.005 0 0 7.02 0 15.495C0 23.985 7.02 30.99 15.495 30.99ZM6.465 6.06C7.965 4.635 9.78 3.54 11.805 2.94C10.74 4.005 9.84 5.50501 9.165 7.335C8.115 7.005 7.21501 6.57 6.465 6.06ZM19.2001 2.955C21.21 3.555 23.025 4.635 24.51 6.06C23.775 6.58499 22.8751 7.005 21.825 7.35C21.15 5.50501 20.25 4.005 19.2001 2.955ZM16.545 3.435C17.79 4.035 18.93 5.655 19.74 7.86C18.75 8.03999 17.685 8.14501 16.545 8.19V3.435ZM11.25 7.86C12.075 5.655 13.2001 4.035 14.445 3.435V8.19C13.305 8.14501 12.24 8.03999 11.25 7.86ZM2.445 14.4451C2.65501 11.895 3.61501 9.54 5.085 7.605C6 8.27999 7.185 8.86501 8.565 9.3C8.17501 10.86 7.92 12.5999 7.845 14.4451H2.445ZM23.145 14.4451C23.07 12.5999 22.815 10.86 22.425 9.3C23.805 8.86501 24.99 8.295 25.89 7.605C27.375 9.54 28.335 11.895 28.545 14.4451H23.145ZM9.99 14.4451C10.065 12.81 10.29 11.25 10.635 9.83999C11.835 10.08 13.1099 10.23 14.445 10.29V14.4451H9.99ZM16.545 14.4451V10.29C17.88 10.23 19.155 10.08 20.355 9.83999C20.7 11.25 20.925 12.81 21 14.4451H16.545ZM2.445 16.545H7.845C7.92 18.42 8.17501 20.175 8.565 21.75C7.2 22.185 6.03 22.755 5.13 23.43C3.63 21.4799 2.65501 19.11 2.445 16.545ZM9.99 16.545H14.445V20.775C13.125 20.835 11.835 20.985 10.65 21.21C10.29 19.785 10.05 18.195 9.99 16.545ZM16.545 20.775V16.545H21C20.94 18.195 20.7 19.785 20.34 21.21C19.155 20.985 17.88 20.835 16.545 20.775ZM22.425 21.75C22.83 20.175 23.07 18.42 23.145 16.545H28.545C28.335 19.11 27.3601 21.4799 25.86 23.43C24.9601 22.755 23.79 22.185 22.425 21.75ZM16.545 22.875C17.6699 22.9199 18.735 23.025 19.71 23.205C18.9 25.365 17.775 26.97 16.545 27.555V22.875ZM11.28 23.205C12.255 23.025 13.32 22.9199 14.445 22.875V27.555C13.215 26.97 12.09 25.365 11.28 23.205ZM6.50999 24.975C7.245 24.465 8.145 24.0451 9.18 23.715C9.85501 25.515 10.74 26.985 11.775 28.035C9.795 27.435 7.995 26.3701 6.50999 24.975ZM21.81 23.715C22.845 24.0451 23.745 24.465 24.4801 24.975C22.995 26.3701 21.1949 27.435 19.215 28.035C20.25 26.985 21.135 25.515 21.81 23.715Z" fill="currentColor"/>
-                                </svg>View it live
-                            </div>
-                        </button>
-                    </a>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify" onclick="window.open('https://animated-paletas-c14d00.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
                 </div>
+                </div>
+        <!--  REDUX QUIZ PROJECT  -->
+            <div lang="en-US" class="project">
+                <div class="projectPicture" aria-hidden="true">
+                    <img src="/Assets/images/redux-quiz.png" alt="">
+                </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">Space-Quiz Project</h3>
+                    <p lang="en">For this project we worked in a team of four to create a short quiz using React and Redux.We learnd how to use selectors to access redux state and to use dispatch to trigger redux actions.
+                    </p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">HTML</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                        <li lang="en">React</li>
+                        <li lang="en">JSX</li>
+                        <li lang="en">Redux</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github" aria-label="View code on Github"
+                        onclick="window.open('https://github.com/annikalindberg/project-redux-space-quiz');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
+                    </button>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify" onclick="window.open('https://space-quiz-by-annikabridgetfionafrida.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
+                </div>
+                </div>
+
+                <!--  MOVIE RELEASES PROJECT  -->
+                <div lang="en-US" class="project">
+                    <div class="projectPicture" aria-hidden="true">
+                        <img src="/Assets/images/movies-img.png" alt="">
+                    </div>
+                    <div class="project-info" aria-label="Information about the project">
+                         <h3 lang="en">Movie releases</h3>
+                        <p lang="en">Working together with Frida and Briget in this project we started using React Routs to build our forst multi-page React application fetching data from the Movie Database. We learned several new hooks, including useNavigate and useParams. We also learned how to incorporate a .env file to store environmental variables. We have experimented with the .env file and and environmental variable in order to not include our API key directly in the code.
+                        </p>
+                        <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                            <li lang="en">HTML</li>
+                            <li lang="en">CSS</li>
+                            <li lang="en">JavaScript</li>
+                            <li lang="en">React</li>
+                            <li lang="en">JSX</li>
+                            <li lang="en">Redux</li>
+                        </ul>
+                        <button lang="en" type="button" class="view-code" title="link to project on Github"
+                            aria-label="View code on Github"
+                            onclick="window.open('https://github.com/annikalindberg/project-movies');">
+                            <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                            View the code
+                        </button>
+                        <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                            aria-label="View project live in Netlify"
+                            onclick="window.open('https://cosmic-daffodil-7c032f.netlify.app/');">
+                            <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                            Live demo
+                        </button>
+                    </div>
+                </div>
+
+                <!--    MUSIC RELEASES PROJECT  -->
+                    <div lang="en-US" class="project">
+                        <div class="projectPicture" aria-hidden="true">
+                            <img src="/Assets/images/music-releases-img.png" alt="">
+                        </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">Music releases</h3>
+                    <p lang="en">Pair programing project in React where we created worked with useState hooks and
+                        fetching API data from Spotify. The result is a page which shows new album and single releases.
+                    </p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">HTML</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                        <li lang="en">React</li>
+                        <li lang="en">JSX</li>
+                        <li lang="en">Pair-programming</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github"
+                        aria-label="View code on Github"
+                        onclick="window.open('https://github.com/chas-academy/project-music-releases');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
+                    </button>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify"
+                        onclick="window.open('https://anna-annikas.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
+                </div>
+            </div>
+
+            <!--  WEATHER APP PROJECT  -->
+            <div lang="en-US" class="project">
+                <div class="projectPicture" aria-hidden="true">
+                    <img src="/Assets/images/weather-app.png" alt="picture of Weather app">
+                </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">Weather app</h3>
+                    <p lang="en">Pair programming project where we by following a given design, built a weather
+                        dashboard and by fetching external data from a weather API that shows today's weather,
+                        temperature and presents a 5-day forecast. </p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">HTML</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                        <li lang="en">Pair-programming</li>
+                        <li lang="en">API-fetch</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github"
+                        aria-label="View code on Github"
+                        onclick="window.open('https://github.com/annikalindberg/project-weather-app');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
+                    </button>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify"
+                        onclick="window.open('https://rainbow-rolypoly-c2ce71.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
+                </div>
+            </div>
+
+            <!--    GUESS WHO PROJECT  -->
+            <div lang="en-US" class="project">
+                <div class="projectPicture" aria-hidden="true">
+                    <img src="/Assets/images/guess-who.png" alt="">
+                </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">Guess who the game</h3>
+                    <p lang="en">Got to practice creating objects and arrays in Javascript and get an understanding av
+                        the DOM. Project was to build a digital version of the classic board game "Guess who" built in
+                        Javascript.</p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">HTML</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github"
+                        aria-label="View code on Github"
+                        onclick="window.open('https://github.com/AnnikaLindberg/project-guess-who');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
+                    </button>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify"
+                        onclick="window.open('https://comforting-fudge-9d6c21.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
+                </div>
+            </div>
+            <!--    CHATBOT PROJECT  -->
+            <!-- <div lang="en-US" class="project">
+                <div class="projectPicture" aria-hidden="true">
+                    <img src="/Assets/images/chatbot.png" alt="">
+                </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">Chatbot built in JS</h3>
+                    <p lang="en">The chat bot app is a conversational AI-powered tool designed to enhance user
+                        experience by providing instant, personalized, and automated responses to user inquiries. </p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">HTML</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github"
+                        aria-label="View code on Github"
+                        onclick="window.open('https://github.com/AnnikaLindberg/project-chatbot');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
+                    </button>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify"
+                        onclick="window.open('https://theguide-chatbot.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <!-- Here goes my thougts about code, can be skipped for now 
+     <article class="my-words">
+        <h2>My words</h2>
+     </article>
+     -->
+
+    <!-- Here goes a list of skills -->
+    <aside lang="en-US" class="skills">
+        <h2>Skills</h2>
+        <div lang="en-US" class="skills-container">
+            <div class="Code">
+                <h3 class="h3-code">Code</h3>
+                <ul lang="en" class="code-list">
+                    <li lang="en">HTML</li>
+                    <li lang="en">CSS</li>
+                    <li lang="en">JavaScript</li>
+                    <li lang="en">React</li>
+                    <li lang="en">JSX</li>
+                </ul>
+            </div>
+            <div lang="en-US" class="Toolbox">
+                <h3 class="h3-toolbox">Toolbox</h3>
+                <ul lang="en" class="toolbox-list">
+                    <li lang="en">Excel</li>
+                    <li lang="en">Github</li>
+                    <li lang="en">Photoshop</li>
+                    <li lang="en">Visual Studio Code</li>
+                    <li lang="en">Slack</li>
+                    <li lang="en">Figma</li>
+                    <li lang="en"></li>
+                </ul>
+            </div>
+            <div lang="en-US" class="More">
+                <h3 class="h3-more">More</h3>
+                <ul lang="en" class="more-list">
+                    <li lang="en">Pair-programming</li>
+                    <li lang="en">Agile methodology</li>
+                    <li lang="en">Remote coordination</li>
+                    <li lang="en">Process leading</li>
+                    <li lang="en">Norm-critic methodology</li>
+                    <li lang="en">Project management</li>
+                </ul>
+            </div>
+            <div lang="en-US" class="Upcoming">
+                <h3 class="h3-upcoming">Upcoming</h3>
+                <ul lang="en" class="upcoming-list">
+                    <li lang="en">Redux</li>
+                    <li lang="en">Node.js</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
-    <!-- Skills section -->
-<section class="skills-container">
-    <h1 class="skills-title">Skills</h1>
-    <div class="skills-lists-container">
-        <div class="box-one">
-            <ul class="code-list">
-                <li class="code-list-title">Code</li>
-                <li class="list-item">HTML5</li>
-                <li class="list-item">CSS3</li>
-                <li class="list-item">JavaScript ES6</li>
-                <li class="list-item">Styled Components</li>
-                <li class="list-item">GitHub</li>
-            </ul>    
-            <ul class="toolbox-list">
-                <li class="toolbox-list-title">Toolbox</li>
-                <li class="list-item">Adobe Photoshop</li>
-                <li class="list-item">Adobe InDesign</li>
-                <li class="list-item">Figma</li>
-                <li class="list-item">Slack</li>
-            </ul> 
+    </aside>
+
+    <!-- Here goes "Time to talk" -->
+    <footer>
+        <h2>Time to talk</h2>
+        <div class="about-me">
+            <div class="myProfileImg">
+                <img class="profile-pic" src="/Assets/images/profil-square.JPG" alt="profile image of Annika">
+            </div>
+            <div lang="en-US" class="nameTitle">
+                <h1 class="name">Annika Lindberg</h1>
+                <h2 class="title">Frontend developer</h2>
+            </div>
         </div>
-        <div class="box-two"> 
-            <ul class="more-list">
-                <li class="more-list-title">More</li>
-                <li class="list-item">Agile methodology</li>
-                <li class="list-item">Process design</li>
-            </ul>    
-            <ul class="upcoming-list">
-                <li class="upcoming-list-title">Upcoming</li>
-                <li class="list-item">React</li>
-                <li class="list-item">Redux</li>
-                <li class="list-item">Node.js</li>
-            </ul> 
-        </div>       
-    </div>
-</section>
-   
-    <!--    <img title="placeholder" src="https://placehold.co/400" /> -->
-    <!--     <p>OG (Open Graph) tags are snippets of code that provide meta
-        data about a web page to social media platforms (ex Fb, Linkedin etc)</p> -->
-        <!--     <video>  Här lägger man videon, dess hight och width ska jag sen ange i metataggens property (content="") </video> -->
-    <footer class="">
-        <div class="">
-            <p>Time to talk</p>
-        <a href="mailto: annika.edit.lindberg@gmail.com" target="_blank">
-            <img src="./assets/email.svg" alt="Email Annika" class="logo">
-        </a>
+        <div lang="en-US" class="phoneAndMail">
+            <p>+46(0) 707 53 35 68</p>
+            <p>annika.edit.lindberg@gmail.com</p>
+        </div>
+        <!-- Here goes icons with links -->
+        <div class="contactMe">
+            <a hreflang="en-US" class="icon" title="link to Annika's Linked In page"
+                href="https://www.linkedin.com/in/Annika-Lindberg/" target="_blank">
+                <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+            </a>
+            <a href lang="en-US" class="icon" title="link to Annika's Github page"
+                href="https://github.com/AnnikaLindberg" target="_blank">
+                <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a hreflang="en-US" class="icon" title="link to Annika's mail" href="mailto:AnnikaLindberg@gmail.com"
+                target="_blank">
+                <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+            </a>
         </div>
     </footer>
-    </body>
+    <button onclick="scrollToTop()" class="top-button" id="top-button" title="Scroll to top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+
 </html>
