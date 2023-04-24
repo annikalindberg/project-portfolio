@@ -538,6 +538,7 @@ footer h2 {
         min-width: 50%;
         min-height: 100%;
         filter: brightness(150%);
+        max-height: -webkit-fill-available;
     }
 
     .cover {
