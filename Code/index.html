@@ -17,8 +17,7 @@
     <!-- OG tags for social media-->
     <meta property="og:title" content="Annikas Portfolio" />
     <meta property="og:description" content="The portfolio page of Annika Lindberg Frontend developer" />
-    <!-- !! Change the picture below, only a placeholder !! -->
-    <meta property="og:image" content="" /> <!-- lägg en bildpathway här för att se en bild vid delning -->
+    <meta property="og:image" content="./Assets/images/" />
     <!--Title of webpage-->
     <title>Annikas Portfolio</title>
     <!-- Favicon -->
@@ -93,6 +92,37 @@
             <h2 lang="en">Featured Projects</h2>
 
             <!-- Latest project first-->
+
+            <!--  Happy-thoughts-project -->
+            <div lang="en-US" class="project">
+                <div class="projectPicture" aria-hidden="true">
+                    <img src="./Assets/images/happy-thoughts-mockup.png" alt="To-Do-app">
+                </div>
+                <div class="project-info" aria-label="Information about the project">
+                    <h3 lang="en">Happy-Thoughts-Project</h3>
+                    <p lang="en">For this project i got to build both frontend and backend. For the backend i used Express and MongoDB to build an API with both GET request endpoints to return data and POST endpoints to create data. For the frontend i used React to build a page where you can post and like happy thoughts. </p>
+                    </p>
+                    <ul lang="en" class="project-languages" aria-label="Coding languages used in this project">
+                        <li lang="en">Express</li>
+                        <li lang="en">Mongo DB</li>
+                        <li lang="en">CSS</li>
+                        <li lang="en">JavaScript</li>
+                        <li lang="en">React</li>
+                        <li lang="en">JSX</li>
+                    </ul>
+                    <button lang="en" type="button" class="view-code" title="link to project on Github"
+                        aria-label="View code on Github" onclick="window.open('https://github.com/annikalindberg/project-happy-thoughts');">
+                        <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                        View the code
+                    </button>
+                    <button lang="en" type="button" class="live-demo" title="link to project on Netlify"
+                        aria-label="View project live in Netlify"
+                        onclick="window.open('https://sweet-unicorn-99f547.netlify.app/');">
+                        <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                        Live demo
+                    </button>
+                </div>
+            </div>
 
             <!--  To-Do-App PROJECT -->
             <div lang="en-US" class="project">
