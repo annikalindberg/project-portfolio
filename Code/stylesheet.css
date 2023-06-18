@@ -200,6 +200,7 @@ header {
 /*** SECTION: FEATURED PROJECTS ***/
 .featured-projects {
     margin-left: 24px;
+    margin-right: 24px;
 }
 
 .projectPicture {
