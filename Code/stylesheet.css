@@ -16,6 +16,16 @@ body {
     width: 100%;
     font-family: 'Satoshi', sans-serif;
 }
+.general-link {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(201, 216, 222, 0.466);
+
+    :hover {
+        background-color: rgba(109, 119, 124, 0.466);
+        color: black;
+    }
+}
 
 header {
     background-color: var(--highlight-color-yellow);
@@ -199,13 +209,20 @@ header {
 
 /*** SECTION: FEATURED PROJECTS ***/
 .featured-projects {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-info {
+    margin: 30px;
 }
 
 .projectPicture {
-    margin: 24px 24px 24px 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 30px;
 }
 
 .project {
@@ -245,8 +262,9 @@ h3 {
 
 .featured-projects li {
     display: inline;
-    padding: 3px;
-    background-color: #000000;
+    padding: 7px;
+   
+    background-color: #686363;
     color: #ffff;
     font-family: 'Satoshi-Variable';
     font-style: normal;
@@ -254,6 +272,7 @@ h3 {
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+
 }
 
 .featured-projects button {
@@ -401,6 +420,11 @@ footer h2 {
     .skills {
         background-color: white;
     }
+                .projectPicture {
+                    width: 200px;
+                   
+                    /* Maintain aspect ratio */
+                }
 
 }
 
@@ -465,10 +489,11 @@ footer h2 {
         align-items: center;
     }
 
-    .featured-projects img {
-        width: 184px;
-        height: 280px;
-        object-fit: cover;
+    .projectPicture {
+        width: 300px;
+        padding: 20px;
+        width: 300px;
+        border-radius: 30px;
     }
 
     .featured-projects p {
