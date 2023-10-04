@@ -111,10 +111,7 @@ header {
     max-width: 95%;
 }
 
-.contact-me {
-    display: flex;
-    margin: 24px 0 12px 0;
-}
+
 
 .icon {
     font-size: 32px;
@@ -161,6 +158,10 @@ header {
     width: fit-content;
 }
 
+.contact-me {
+    display: flex;
+    margin: 24px 0 12px 0;
+}
 /*** SECTION: TECH ***/
 .tech {
     display: flex;
@@ -221,13 +222,12 @@ header {
     margin-right: auto;
     width: 300px;
     padding: 20px;
-    width: 300px;
     border-radius: 30px;
 }
 
-.project {
+/* .project {
     margin-top: 24px;
-}
+} */
 
 .featured-projects h2,
 h3 {
@@ -247,7 +247,7 @@ h3 {
     font-weight: 900;
     font-size: 32px;
     line-height: 43px;
-    color: #000000;
+    color: #573d3d;
 }
 
 .featured-projects p {
@@ -256,28 +256,28 @@ h3 {
     font-weight: 400;
     font-size: 22px;
     line-height: 29px;
-    color: #000000;
+    color: #4b3b3b;
     margin: 24px 24px 24px 0;
 }
 
-.featured-projects li {
+.featured-projects li{
     display: inline;
-    padding: 7px;
-   
-    background-color: #686363;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #513d3d;
     color: #ffff;
     font-family: 'Satoshi-Variable';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    
 
 }
 
 .featured-projects button {
     display: block;
-    margin: 12px 0px 12px 0;
+    margin: 27px 0 27px 0;
     background-color: #F5F5F5;
     border-radius: 40px;
     border: none;
@@ -291,13 +291,15 @@ h3 {
 }
 
 .view-code:hover {
-    background-color: #EB5577;
+    background-color: #a3989b9d;
     color: white;
+    border: 1px solid #a3989b9d;
 }
 
 .live-demo:hover {
-    background-color: #0B24F5;
+    background-color: #0b22f552;
     color: white;
+    border: 1px solid #a3989b9d;
 }
 
 .skills {
@@ -601,7 +603,7 @@ footer h2 {
     .scroll {
         position: absolute;
         left: 51%;
-        top: 85%;
+        top: 75%;
         margin-left: -50px;
         margin-top: -50px;
     }
