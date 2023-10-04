@@ -225,16 +225,12 @@ header {
 }
 
 .projectPicture {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    padding: 20px;
+
+    width: 400px;
+  
     border-radius: 30px;
 }
 
-/* .project {
-    margin-top: 24px;
-} */
 
 .featured-projects h2,
 h3 {
